@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-github-dark text-github-dark-text min-h-screen font-sans;
+  }
+
+  a {
+    @apply text-github-dark-accent hover:underline;
+  }
+}
+
+@layer components {
+  .repo-card {
+    @apply bg-github-dark-secondary border border-github-dark-border rounded-md p-4 hover:border-github-dark-accent transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-github-dark-accent text-white rounded-md px-4 py-2 hover:bg-opacity-80 transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply border border-github-dark-border bg-github-dark-secondary text-github-dark-text rounded-md px-4 py-2 hover:border-github-dark-accent transition-colors duration-200;
+  }
+
+  .input-search {
+    @apply bg-github-dark-secondary border border-github-dark-border text-github-dark-text rounded-md px-4 py-2 focus:outline-none focus:border-github-dark-accent transition-colors duration-200;
+  }
+}
